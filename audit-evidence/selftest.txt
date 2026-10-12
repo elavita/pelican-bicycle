@@ -1,0 +1,17 @@
+SELFTEST 16/16 PASS
+PASS A1 脚贴踏板（整圈偏差<1.5px） :: maxErr=0.000px 脱靶=0/360
+PASS A3 膝盖朝前（不反关节） :: 反关节帧=0/360
+PASS A2 膝轨迹有行程（蹬踏动作存在） :: 膝 x 32.1px, y 42.4px
+PASS B1 轮角由 dist 决定 :: 失配样本=0/6
+PASS B2 曲柄臂长恒定（踏板在曲柄末端） :: 失配样本=0/6
+PASS B3 脚跟着踏板走 :: 失配样本=0/6
+PASS B4 腿姿态按曲柄周期复现 :: 周期=1013px 半周期姿态不同=true
+PASS C1 前进会改变轮与腿 :: Δdist=90px 后属性已变
+PASS D1 属性无 NaN/undefined :: clean
+PASS E1 视差平移在瓦片周期内 :: clouds=886.0 farHills=762.6 nearScenery=441.7 foreground=463.9
+PASS E2 灌木瓦片接缝连续（x=0 与 x=960 同高） :: y(0)=422 y(960)=422
+PASS F1 速度读数与状态一致 :: 读数=9.0 km/h
+PASS G1 喉囊在鼓动（缩放行程>0.05） :: 行程 0.216（0.89→1.11）
+PASS G2 身体随蹬踏起伏（>1px） :: 行程 6.06px
+PASS G3 翅膀在拍打（>3°） :: 行程 14.00°
+PASS H1 太阳光芒确有 CSS 动画 :: animationName=sunspin duration=70s
